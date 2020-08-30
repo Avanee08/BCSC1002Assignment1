@@ -16,4 +16,11 @@ public class Library {
     public Library(Book[] booksThatAreCurrentlyAvailable) {
         this.booksThatAreCurrentlyAvailable = booksThatAreCurrentlyAvailable;
     }
+    // Non-Parameterized Constructor
+    public Library() {
+        this.booksThatAreCurrentlyAvailable = new Book[MAXIMUM_BOOKS_IN_LIBRARY];
+        for (int libraryIndex = 0; libraryIndex < MAXIMUM_BOOKS_IN_LIBRARY; libraryIndex++) {
+            this.booksThatAreCurrentlyAvailable[libraryIndex] = new Book();
+        }
+    }
 }
