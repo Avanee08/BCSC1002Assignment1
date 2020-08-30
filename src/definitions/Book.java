@@ -19,8 +19,14 @@ public class Book {
         this.nameOfTheAuthorOfTheBook = nameOfTheAuthorOfTheBook;
         this.thirteenDigitISBNNumberOfTheBook = thirteenDigitISBNNumberOfTheBook;
     }
-}
 
+    // Non-Parameterized Constructor
+    public Book() {
+        this.nameOfTheBook = null;
+        this.nameOfTheAuthorOfTheBook = null;
+        this.thirteenDigitISBNNumberOfTheBook = null;
+    }
+}
 
 
 
